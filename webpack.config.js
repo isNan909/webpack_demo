@@ -78,6 +78,12 @@ const cssDev = [
 				hash: true,
 				template: './src/index.html'
 			}),
+			new HtmlWebpackPlugin({
+				title: 'Contact Page',
+				hash: true,
+				filename: 'contact.html',
+				template: './src/contact.html'
+			}),
 			new ExtractTextPlugin({
 				filename: '/css/[name].css',
 				disable: !isProd,
